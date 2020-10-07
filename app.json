@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/hello/hello",
+    "pages/details/details",
+    "pages/camera/index",
+    "pages/article/article"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFBD9D",
+    "navigationBarTitleText": "一只贤休闲小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#FFBD9D",
+    "borderStyle": "black",
+    "selectedColor": "#ffffff",
+    "list": [
+      {
+        "iconPath": "images/资讯看点未选中.png",
+        "selectedIconPath": "images/资讯看点.png",
+        "pagePath": "pages/index/index",
+        "text": "拍一拍"
+      },
+      {
+        "iconPath": "images/日志未选中.png",
+        "selectedIconPath": "images/日志选中.png",
+        "pagePath": "pages/logs/logs",
+        "text": "日志"
+      },
+      {
+        "iconPath": "images/测试未选中.png",
+        "selectedIconPath": "images/测试选中.png",
+        "pagePath": "pages/hello/hello",
+        "text": "视频"
+      },
+      {
+        "iconPath": "images/主页未选中.png",
+        "selectedIconPath": "images/主页选中.png",
+        "pagePath": "pages/article/article",
+        "text": "资讯"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

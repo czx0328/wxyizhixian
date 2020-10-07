@@ -1,0 +1,6 @@
+<!--pages/details/details.wxml-->
+<view class="article">
+<view class="title"><text>{{articles.title}}</text></view>
+<view class="contont"><text>{{articles.content}}</text></view>
+<view class="publish"><text>出版日期:{{articles.publishTime}}</text></view>
+</view>

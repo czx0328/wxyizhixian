@@ -1,0 +1,6 @@
+<!--pages/article/article.wxml-->
+<text>文章:</text>
+<view class="article"  bindtap="toDetailsHandle" wx:for="{{articles}}" wx:key="id" data-id="{{item.id}}">
+  <view class="title"><text>{{item.title}}</text></view>
+  <view  class="time"><text>{{item.publishTime}}</text></view>
+</view>

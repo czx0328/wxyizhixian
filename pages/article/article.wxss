@@ -1,0 +1,12 @@
+/* pages/article/article.wxss */
+.article{
+  padding: 3em 1em;
+  border-bottom: 1px solid #cccccc;
+}
+.article > .title{
+  font-size: 42rpx;
+}
+.article > .time{
+  font-size: 30rpx;
+  color: #765755;
+}

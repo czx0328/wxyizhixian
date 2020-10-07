@@ -1,0 +1,104 @@
+<!--pages/hello/hello.wxml-->
+<!-- <text>pages/hello/hello.wxml</text> -->
+<!-- <view class="ele" id="ele">
+这是hello的view
+</view>
+ <!-- <view style="color:{{color}};"> {{a + b}} + {{c}} + d </view> -->
+<!-- <block wx:for="{{[1,2,3]}}" wx:key>
+    <text>INDEX</text>
+    <view>{{index}}</view>
+    <text>ITEM</text>
+    <view>{{item}}</view>
+</block>  -->
+<!--条件渲染-->
+<!-- <view wx:if="{{view == 'app'}}">app</view>
+<view wx:elif="{{view == 'app1'}}">app1</view>
+<view wx:else="{{view == 'app2'}}">app2</view>  -->
+<!--hidden-->
+<!-- <view hidden="{{false}}">hidden没有隐藏</view>  -->
+<!--定义模板-->
+<!-- 使用 name 属性，作为模板的名字 -->
+ <!-- <template name="new">
+    <view >flag中的new</view>
+    <view>姓名:{{name}}年龄:{{age}}</view>
+</template>
+<template  name="old">
+    <view >flag中的old</view>
+    <view >姓名:{{name}}年龄:{{age}}</view>
+</template> -->
+<!-- 使用 is 属性，声明需要的使用的模板，然后将模板所需要的 data 传入 -->
+ <!-- <template is="{{flag?'old':'new'}}" data="{{...person1}}"/>
+<template is="{{flag?'old':'new'}}" data="{{...person2}}"/> -->
+<!-- <view class="section">
+  <view class="section__title">普通选择器</view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      当前选择：{{array[index]}}
+    </view>
+  </picker>
+</view>
+<view class="section">
+  <view class="section__title">多列选择器</view>
+  <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+    <view class="picker">
+      当前选择：{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}
+    </view>
+  </picker>
+</view>
+<view class="section">
+  <view class="section__title">时间选择器</view>
+  <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+    <view class="picker">
+      当前选择: {{time}}
+    </view>
+  </picker>
+</view>
+
+<view class="section">
+  <view class="section__title">日期选择器</view>
+  <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+    <view class="picker">
+      当前选择: {{date}}
+    </view>
+  </picker>
+</view>
+<view class="section">
+  <view class="section__title">省市区选择器</view>
+  <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+    <view class="picker">
+      当前选择：{{region[0]}}，{{region[1]}}，{{region[2]}}
+    </view>
+  </picker>
+</view>
+<view>
+<radio-group>
+ <label>
+       <radio value="male"/>男
+</label>       
+<label >
+        <radio value="femble"/>女
+</label>
+
+</radio-group> --> 
+
+<view class="page-body">
+  <view class="page-section tc">
+    <video id="myVideo" src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" binderror="videoErrorCallback" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
+
+    <view class="weui-cells">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__hd">
+          <view class="weui-label">弹幕内容</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input bindblur="bindInputBlur" class="weui-input" type="text" placeholder="在此处输入弹幕内容" />
+        </view>
+      </view>
+    </view>
+    <view class="btn-area">
+      <button bindtap="bindSendDanmu" class="page-body-button" type="primary" formType="submit">发送弹幕</button>
+      <button bindtap="bindPlay" class="page-body-button" type="primary" plain="true" >播放</button>
+      <button bindtap="bindPause" class="page-body-button" type="primary" plain="true">暂停</button>
+    </view>
+  </view>
+</view>

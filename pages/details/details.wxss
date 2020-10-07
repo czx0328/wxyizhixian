@@ -1,0 +1,13 @@
+.article{
+  padding: 1em;
+}
+.title{
+  text-align: center;
+  line-height: 2em;
+  color: coral;
+  padding: .5em;
+}
+.publish{
+  padding: 1em;
+  size: 10px;
+}
